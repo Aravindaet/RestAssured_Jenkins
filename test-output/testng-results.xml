@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16858" started-at="2023-04-26T13:03:06 IST" finished-at="2023-04-26T13:03:23 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16858" started-at="2023-04-26T13:03:06 IST" finished-at="2023-04-26T13:03:23 IST">
+      <class name="com.RestAssured.restfulbooker.LambokTest">
+        <test-method status="PASS" signature="deleteBookingDetails()[pri:0, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="deleteBookingDetails" duration-ms="7797" started-at="2023-04-26T13:03:06 IST" description="To Delete the booking details using DELETE method" finished-at="2023-04-26T13:03:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBookingDetails -->
+        <test-method status="PASS" signature="partialBookingUpdate()[pri:0, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="partialBookingUpdate" duration-ms="2576" started-at="2023-04-26T13:03:14 IST" description="To partially update the booking details using PATCH method" finished-at="2023-04-26T13:03:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partialBookingUpdate -->
+        <test-method status="PASS" signature="createBooking()[pri:1, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="createBooking" duration-ms="1261" started-at="2023-04-26T13:03:16 IST" description="To verify create booking API" finished-at="2023-04-26T13:03:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+        <test-method status="PASS" signature="getBookingDetailsUsingBookingId()[pri:2, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="getBookingDetailsUsingBookingId" duration-ms="2490" started-at="2023-04-26T13:03:18 IST" description="To get the booking details using bookingId" finished-at="2023-04-26T13:03:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingDetailsUsingBookingId -->
+        <test-method status="PASS" signature="updateBookingDetails()[pri:3, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="updateBookingDetails" duration-ms="2621" started-at="2023-04-26T13:03:20 IST" description="To update the booking details using booking Id" finished-at="2023-04-26T13:03:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBookingDetails -->
+      </class> <!-- com.RestAssured.restfulbooker.LambokTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
