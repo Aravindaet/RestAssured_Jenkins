@@ -1,5 +1,7 @@
 package com.RestAssured.restfulbooker;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.given;
 
 import java.io.IOException;
@@ -28,7 +30,7 @@ public class LambokTest {
 		Response response = given().contentType(ContentType.JSON).body(requestPayload).when()
 				.post("https://restful-booker.herokuapp.com/booking");
 
-		Assert.assertEquals(response.statusCode(), 200);
+		AssertJUnit.assertEquals(response.statusCode(), 200);
 
 		System.out.println("Request Payload is" + ":" + requestPayload);
 
@@ -63,7 +65,7 @@ public class LambokTest {
 
 		System.out.println("Response Payload is" + ":" + responsePayload);
 
-		Assert.assertEquals(requestPayload, responsePayload);
+		AssertJUnit.assertEquals(requestPayload, responsePayload);
 
 		System.out.println("Request Payload is" + " :" + requestPayload);
 		System.out.println("Response Payload is" + " :" + responsePayload);
@@ -88,8 +90,8 @@ public class LambokTest {
 		 * Integer.parseInt(Id); System.out.println(bookingId);
 		 */
 
-		Assert.assertEquals(response.statusCode(), 200);
-		Assert.assertEquals(responsePayload, requestPayload);
+		AssertJUnit.assertEquals(response.statusCode(), 200);
+		AssertJUnit.assertEquals(responsePayload, requestPayload);
 
 		System.out.println("Request Payload is" + " :" + requestPayload);
 		System.out.println("Response Payload is" + " :" + responsePayload);
@@ -116,7 +118,7 @@ public class LambokTest {
 		// Calling get method after creating booking
 		Response getBookingResponse = given().when().get("https://restful-booker.herokuapp.com/booking/" + bookingId);
 
-		Assert.assertEquals(getBookingResponse.header("Content-Type"), "application/json; charset=utf-8");
+		AssertJUnit.assertEquals(getBookingResponse.header("Content-Type"), "application/json; charset=utf-8");
 
 		CreateBooking getMethodBookingDetailsResponsePayload = objectMapper
 				.readValue(getBookingResponse.getBody().asString(), CreateBooking.class);
@@ -125,7 +127,7 @@ public class LambokTest {
 
 		System.out.println("Get Method Booking Details" + " " + getMethodBookingDetailsResponsePayload);
 
-		Assert.assertEquals(getMethodBookingDetailsResponsePayload, postMethodBookingDetailsResponsePayload);
+		AssertJUnit.assertEquals(getMethodBookingDetailsResponsePayload, postMethodBookingDetailsResponsePayload);
 
 	}
 
@@ -151,9 +153,9 @@ public class LambokTest {
 		CreateBooking updateResponsePayload = objectMapper.readValue(response.getBody().asString(),
 				CreateBooking.class);
 
-		Assert.assertEquals(response.getStatusCode(), 200);
+		AssertJUnit.assertEquals(response.getStatusCode(), 200);
 
-		Assert.assertEquals(updateRequestPayload, updateResponsePayload);
+		AssertJUnit.assertEquals(updateRequestPayload, updateResponsePayload);
 
 	}
 
@@ -179,9 +181,9 @@ public class LambokTest {
 		CreateBooking partialBookingUpdateResponse = objectMapper.readValue(response.getBody().asString(),
 				CreateBooking.class);
 
-		Assert.assertEquals(response.statusCode(), 200);
+		AssertJUnit.assertEquals(response.statusCode(), 200);
 
-		Assert.assertEquals(partialBookingUpdateRequest, partialBookingUpdateResponse);
+		AssertJUnit.assertEquals(partialBookingUpdateRequest, partialBookingUpdateResponse);
 
 	}
 
@@ -204,10 +206,10 @@ public class LambokTest {
 
 		System.out.println("Response got from delete request is" + response.asString());
 
-		Assert.assertEquals(response.statusCode(), 201);
-		Assert.assertEquals(response.header("Content-Type"), "text/plain; charset=utf-8");
-		Assert.assertEquals(response.header("Content-Length"), "7");
-		Assert.assertEquals(response.getBody().asString(), "Created");
+		AssertJUnit.assertEquals(response.statusCode(), 201);
+		AssertJUnit.assertEquals(response.header("Content-Type"), "text/plain; charset=utf-8");
+		AssertJUnit.assertEquals(response.header("Content-Length"), "7");
+		AssertJUnit.assertEquals(response.getBody().asString(), "Created");
 
 	}
 

@@ -1,5 +1,7 @@
 package com.RestAssured.restfulbooker;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.given;
 
 import java.util.Map;
@@ -34,7 +36,7 @@ public class RestfulBookerE2ETests {
 		JSONObject jo = new JSONObject(response.asString());
 		System.out.println(jo);
 
-		Assert.assertEquals(response.statusCode(), 200);
+		AssertJUnit.assertEquals(response.statusCode(), 200);
 		bookingId = jo.get("bookingid").toString();
 
 		System.out.println("*************" + bookingId);
@@ -61,7 +63,7 @@ public class RestfulBookerE2ETests {
 			}
 		}
 
-		Assert.assertTrue(status);
+		AssertJUnit.assertTrue(status);
 		// System.out.println(jsonArray.get(bookingId));
 
 		/*
@@ -81,10 +83,10 @@ public class RestfulBookerE2ETests {
 
 				.when().get("https://restful-booker.herokuapp.com/booking/" + bookingId);
 
-		Assert.assertEquals(response.statusCode(), 200);
+		AssertJUnit.assertEquals(response.statusCode(), 200);
 		// JSONObject jo = new JSONObject(response.asString());
 		String responsePayload = response.asString();
-		JSONAssert.assertEquals(requestpayload, responsePayload, JSONCompareMode.NON_EXTENSIBLE);
+		AssertJUnit.assertEquals(requestpayload, responsePayload, JSONCompareMode.NON_EXTENSIBLE);
 
 	}
 
