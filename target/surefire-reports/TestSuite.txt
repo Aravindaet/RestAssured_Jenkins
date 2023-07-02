@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.211 s <<< FAILURE! - in TestSuite
+getBookingDetailsById(com.RestAssured.restfulbooker.RestfulBookerE2ETests)  Time elapsed: 1.369 s  <<< FAILURE!
+java.lang.AssertionError: 
+{
+  "firstname" : "Katrine",
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2023-06-18",
+    "checkout" : "2023-07-03"
+  },
+  "totalprice" : 133,
+  "depositpaid" : true,
+  "lastname" : "Hand"
+} expected:<{"firstname":"Katrine","lastname":"Hand","totalprice":133,"depositpaid":true,"bookingdates":{"checkin":"2023-06-18","checkout":"2023-07-03"},"additionalneeds":"Breakfast"}> but was:<NON_EXTENSIBLE>
+	at com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById(RestfulBookerE2ETests.java:89)
+

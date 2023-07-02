@@ -8,15 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,858</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">33,850</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.RestAssured.restfulbooker.LambokTest</td><td><a href="#m0">createBooking</a></td><td rowspan="1">1682494396886</td><td rowspan="1">1261</td></tr><tr class="passedeven"><td><a href="#m1">deleteBookingDetails</a></td><td rowspan="1">1682494386488</td><td rowspan="1">7797</td></tr><tr class="passedeven"><td><a href="#m2">getBookingDetailsUsingBookingId</a></td><td rowspan="1">1682494398154</td><td rowspan="1">2490</td></tr><tr class="passedeven"><td><a href="#m3">partialBookingUpdate</a></td><td rowspan="1">1682494394305</td><td rowspan="1">2576</td></tr><tr class="passedeven"><td><a href="#m4">updateBookingDetails</a></td><td rowspan="1">1682494400650</td><td rowspan="1">2621</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.RestAssured.restfulbooker.RestfulBookerE2ETests</td><td><a href="#m0">getBookingDetailsById</a></td><td rowspan="1">1688291135489</td><td rowspan="1">1348</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.RestAssured.restfulbooker.JsonSchemaValidationTest</td><td><a href="#m1">createBookingSchemaValidation</a></td><td rowspan="1">1688291116797</td><td rowspan="1">9388</td></tr><tr class="passedeven"><td><a href="#m2">createTokenJsonSchemaValidation</a></td><td rowspan="1">1688291126206</td><td rowspan="1">1429</td></tr><tr class="passedeven"><td><a href="#m3">getBookingSchemaValidation</a></td><td rowspan="1">1688291127640</td><td rowspan="1">3381</td></tr><tr class="passedodd"><td rowspan="5">com.RestAssured.restfulbooker.LambokTest</td><td><a href="#m4">createBooking</a></td><td rowspan="1">1688291143808</td><td rowspan="1">1355</td></tr><tr class="passedodd"><td><a href="#m5">deleteBookingDetails</a></td><td rowspan="1">1688291138235</td><td rowspan="1">2760</td></tr><tr class="passedodd"><td><a href="#m6">getBookingDetailsUsingBookingId</a></td><td rowspan="1">1688291145169</td><td rowspan="1">2701</td></tr><tr class="passedodd"><td><a href="#m7">partialBookingUpdate</a></td><td rowspan="1">1688291140997</td><td rowspan="1">2808</td></tr><tr class="passedodd"><td><a href="#m8">updateBookingDetails</a></td><td rowspan="1">1688291147874</td><td rowspan="1">2702</td></tr><tr class="passedeven"><td rowspan="4">com.RestAssured.restfulbooker.RestfulBookerE2ETests</td><td><a href="#m9">createNewBooking</a></td><td rowspan="1">1688291131026</td><td rowspan="1">1377</td></tr><tr class="passedeven"><td><a href="#m10">createToken</a></td><td rowspan="1">1688291132408</td><td rowspan="1">1403</td></tr><tr class="passedeven"><td><a href="#m11">getBookingData</a></td><td rowspan="1">1688291133813</td><td rowspan="1">1672</td></tr><tr class="passedeven"><td><a href="#m12">updateBookingDetails</a></td><td rowspan="1">1688291136844</td><td rowspan="1">1384</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.RestAssured.restfulbooker.LambokTest#createBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.RestAssured.restfulbooker.LambokTest#deleteBookingDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.RestAssured.restfulbooker.LambokTest#getBookingDetailsUsingBookingId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.RestAssured.restfulbooker.LambokTest#partialBookingUpdate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.RestAssured.restfulbooker.LambokTest#updateBookingDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.RestAssured.restfulbooker.RestfulBookerE2ETests#getBookingDetailsById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: {
+  &quot;firstname&quot; : &quot;Jerald&quot;,
+  &quot;additionalneeds&quot; : &quot;Breakfast&quot;,
+  &quot;bookingdates&quot; : {
+    &quot;checkin&quot; : &quot;2023-06-17&quot;,
+    &quot;checkout&quot; : &quot;2023-07-06&quot;
+  },
+  &quot;totalprice&quot; : 142,
+  &quot;depositpaid&quot; : true,
+  &quot;lastname&quot; : &quot;Block&quot;
+} expected:&lt;{&quot;firstname&quot;:&quot;Jerald&quot;,&quot;lastname&quot;:&quot;Block&quot;,&quot;totalprice&quot;:142,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2023-06-17&quot;,&quot;checkout&quot;:&quot;2023-07-06&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}&gt; but was:&lt;NON_EXTENSIBLE&gt;
+	at com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById(RestfulBookerE2ETests.java:89)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.RestAssured.restfulbooker.JsonSchemaValidationTest#createBookingSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.RestAssured.restfulbooker.JsonSchemaValidationTest#createTokenJsonSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.RestAssured.restfulbooker.JsonSchemaValidationTest#getBookingSchemaValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.RestAssured.restfulbooker.LambokTest#createBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.RestAssured.restfulbooker.LambokTest#deleteBookingDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.RestAssured.restfulbooker.LambokTest#getBookingDetailsUsingBookingId</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.RestAssured.restfulbooker.LambokTest#partialBookingUpdate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.RestAssured.restfulbooker.LambokTest#updateBookingDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.RestAssured.restfulbooker.RestfulBookerE2ETests#createNewBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.RestAssured.restfulbooker.RestfulBookerE2ETests#createToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.RestAssured.restfulbooker.RestfulBookerE2ETests#getBookingData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.RestAssured.restfulbooker.RestfulBookerE2ETests#updateBookingDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

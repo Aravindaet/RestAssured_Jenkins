@@ -1,0 +1,12 @@
+com\RestAssured\Details\BookingDetails.class
+com\RestAssured\PayloadData\RequestBodyData.class
+com\RestfulBooker\Lambok\BookingDates1.class
+com\RestfulBooker\Lambok\TokenGeneration$TokenGenerationBuilder.class
+com\RestfulBooker\Lambok\TokenGeneration.class
+com\RestfulBooker\Lambok\CreateBooking.class
+com\RestAssured\Details\TokenDetails.class
+com\RestfulBooker\Lambok\CreateBooking$CreateBookingBuilder.class
+com\RestfulBooker\PayloadGeneration\CreateBookingPayload.class
+com\RestfulBooker\PayloadGeneration\TokenGenerationPayload.class
+com\RestAssured\Details\BookingDates.class
+com\RestfulBooker\Lambok\BookingDates1$BookingDates1Builder.class

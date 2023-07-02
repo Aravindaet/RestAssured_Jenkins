@@ -1,0 +1,3 @@
+com\RestAssured\restfulbooker\LambokTest.class
+com\RestAssured\restfulbooker\RestfulBookerE2ETests.class
+com\RestAssured\restfulbooker\JsonSchemaValidationTest.class

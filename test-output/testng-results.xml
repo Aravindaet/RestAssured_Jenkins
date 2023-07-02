@@ -1,33 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+<testng-results skipped="0" failed="1" ignored="1" total="14" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16858" started-at="2023-04-26T13:03:06 IST" finished-at="2023-04-26T13:03:23 IST">
+  <suite name="Suite" duration-ms="33850" started-at="2023-07-02T15:15:16 IST" finished-at="2023-07-02T15:15:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16858" started-at="2023-04-26T13:03:06 IST" finished-at="2023-04-26T13:03:23 IST">
+    <test name="Test" duration-ms="33850" started-at="2023-07-02T15:15:16 IST" finished-at="2023-07-02T15:15:50 IST">
       <class name="com.RestAssured.restfulbooker.LambokTest">
-        <test-method status="PASS" signature="deleteBookingDetails()[pri:0, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="deleteBookingDetails" duration-ms="7797" started-at="2023-04-26T13:03:06 IST" description="To Delete the booking details using DELETE method" finished-at="2023-04-26T13:03:14 IST">
+        <test-method status="PASS" signature="deleteBookingDetails()[pri:0, instance:com.RestAssured.restfulbooker.LambokTest@3b2cf7ab]" name="deleteBookingDetails" duration-ms="2760" started-at="2023-07-02T15:15:38 IST" description="To Delete the booking details using DELETE method" finished-at="2023-07-02T15:15:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteBookingDetails -->
-        <test-method status="PASS" signature="partialBookingUpdate()[pri:0, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="partialBookingUpdate" duration-ms="2576" started-at="2023-04-26T13:03:14 IST" description="To partially update the booking details using PATCH method" finished-at="2023-04-26T13:03:16 IST">
+        <test-method status="PASS" signature="partialBookingUpdate()[pri:0, instance:com.RestAssured.restfulbooker.LambokTest@3b2cf7ab]" name="partialBookingUpdate" duration-ms="2808" started-at="2023-07-02T15:15:40 IST" description="To partially update the booking details using PATCH method" finished-at="2023-07-02T15:15:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- partialBookingUpdate -->
-        <test-method status="PASS" signature="createBooking()[pri:1, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="createBooking" duration-ms="1261" started-at="2023-04-26T13:03:16 IST" description="To verify create booking API" finished-at="2023-04-26T13:03:18 IST">
+        <test-method status="PASS" signature="createBooking()[pri:1, instance:com.RestAssured.restfulbooker.LambokTest@3b2cf7ab]" name="createBooking" duration-ms="1355" started-at="2023-07-02T15:15:43 IST" description="To verify create booking API" finished-at="2023-07-02T15:15:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method status="PASS" signature="getBookingDetailsUsingBookingId()[pri:2, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="getBookingDetailsUsingBookingId" duration-ms="2490" started-at="2023-04-26T13:03:18 IST" description="To get the booking details using bookingId" finished-at="2023-04-26T13:03:20 IST">
+        <test-method status="PASS" signature="getBookingDetailsUsingBookingId()[pri:2, instance:com.RestAssured.restfulbooker.LambokTest@3b2cf7ab]" name="getBookingDetailsUsingBookingId" duration-ms="2701" started-at="2023-07-02T15:15:45 IST" description="To get the booking details using bookingId" finished-at="2023-07-02T15:15:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBookingDetailsUsingBookingId -->
-        <test-method status="PASS" signature="updateBookingDetails()[pri:3, instance:com.RestAssured.restfulbooker.LambokTest@161b062a]" name="updateBookingDetails" duration-ms="2621" started-at="2023-04-26T13:03:20 IST" description="To update the booking details using booking Id" finished-at="2023-04-26T13:03:23 IST">
+        <test-method status="PASS" signature="updateBookingDetails()[pri:3, instance:com.RestAssured.restfulbooker.LambokTest@3b2cf7ab]" name="updateBookingDetails" duration-ms="2702" started-at="2023-07-02T15:15:47 IST" description="To update the booking details using booking Id" finished-at="2023-07-02T15:15:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateBookingDetails -->
       </class> <!-- com.RestAssured.restfulbooker.LambokTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.RestAssured.restfulbooker.RestfulBookerE2ETests">
+        <test-method status="PASS" signature="createNewBooking()[pri:0, instance:com.RestAssured.restfulbooker.RestfulBookerE2ETests@3a079870]" name="createNewBooking" duration-ms="1377" started-at="2023-07-02T15:15:31 IST" finished-at="2023-07-02T15:15:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewBooking -->
+        <test-method status="PASS" signature="createToken()[pri:0, instance:com.RestAssured.restfulbooker.RestfulBookerE2ETests@3a079870]" name="createToken" duration-ms="1403" started-at="2023-07-02T15:15:32 IST" finished-at="2023-07-02T15:15:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createToken -->
+        <test-method status="PASS" signature="getBookingData()[pri:0, instance:com.RestAssured.restfulbooker.RestfulBookerE2ETests@3a079870]" name="getBookingData" duration-ms="1672" started-at="2023-07-02T15:15:33 IST" finished-at="2023-07-02T15:15:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingData -->
+        <test-method status="FAIL" signature="getBookingDetailsById()[pri:0, instance:com.RestAssured.restfulbooker.RestfulBookerE2ETests@3a079870]" name="getBookingDetailsById" duration-ms="1348" started-at="2023-07-02T15:15:35 IST" finished-at="2023-07-02T15:15:36 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[{
+  "firstname" : "Jerald",
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2023-06-17",
+    "checkout" : "2023-07-06"
+  },
+  "totalprice" : 142,
+  "depositpaid" : true,
+  "lastname" : "Block"
+} expected:<{"firstname":"Jerald","lastname":"Block","totalprice":142,"depositpaid":true,"bookingdates":{"checkin":"2023-06-17","checkout":"2023-07-06"},"additionalneeds":"Breakfast"}> but was:<NON_EXTENSIBLE>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: {
+  "firstname" : "Jerald",
+  "additionalneeds" : "Breakfast",
+  "bookingdates" : {
+    "checkin" : "2023-06-17",
+    "checkout" : "2023-07-06"
+  },
+  "totalprice" : 142,
+  "depositpaid" : true,
+  "lastname" : "Block"
+} expected:<{"firstname":"Jerald","lastname":"Block","totalprice":142,"depositpaid":true,"bookingdates":{"checkin":"2023-06-17","checkout":"2023-07-06"},"additionalneeds":"Breakfast"}> but was:<NON_EXTENSIBLE>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:330)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:66)
+at com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById(RestfulBookerE2ETests.java:89)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingDetailsById -->
+        <test-method status="PASS" signature="updateBookingDetails()[pri:0, instance:com.RestAssured.restfulbooker.RestfulBookerE2ETests@3a079870]" name="updateBookingDetails" duration-ms="1384" started-at="2023-07-02T15:15:36 IST" finished-at="2023-07-02T15:15:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBookingDetails -->
+      </class> <!-- com.RestAssured.restfulbooker.RestfulBookerE2ETests -->
+      <class name="com.RestAssured.restfulbooker.JsonSchemaValidationTest">
+        <test-method status="PASS" signature="createBookingSchemaValidation()[pri:0, instance:com.RestAssured.restfulbooker.JsonSchemaValidationTest@f2f2cc1]" name="createBookingSchemaValidation" duration-ms="9388" started-at="2023-07-02T15:15:16 IST" description="To verify create booking json schema" finished-at="2023-07-02T15:15:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBookingSchemaValidation -->
+        <test-method status="PASS" signature="createTokenJsonSchemaValidation()[pri:0, instance:com.RestAssured.restfulbooker.JsonSchemaValidationTest@f2f2cc1]" name="createTokenJsonSchemaValidation" duration-ms="1429" started-at="2023-07-02T15:15:26 IST" description="To verify the create token json schema" finished-at="2023-07-02T15:15:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTokenJsonSchemaValidation -->
+        <test-method status="PASS" signature="getBookingSchemaValidation()[pri:0, instance:com.RestAssured.restfulbooker.JsonSchemaValidationTest@f2f2cc1]" name="getBookingSchemaValidation" duration-ms="3381" started-at="2023-07-02T15:15:27 IST" description="To verify get booking json schema" finished-at="2023-07-02T15:15:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingSchemaValidation -->
+      </class> <!-- com.RestAssured.restfulbooker.JsonSchemaValidationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
