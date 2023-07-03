@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 26 13:03:06 IST 2023</td>
+<td>Started on:</td><td>Sun Jul 02 15:54:52 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16858 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15243 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,106 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById()'><b>getBookingDetailsById</b><br>Test class: com.RestAssured.restfulbooker.RestfulBookerE2ETests</td>
+<td><div><pre>java.lang.AssertionError: {
+  &quot;firstname&quot; : &quot;Darby&quot;,
+  &quot;additionalneeds&quot; : &quot;Breakfast&quot;,
+  &quot;bookingdates&quot; : {
+    &quot;checkin&quot; : &quot;2023-06-14&quot;,
+    &quot;checkout&quot; : &quot;2023-07-02&quot;
+  },
+  &quot;totalprice&quot; : 145,
+  &quot;depositpaid&quot; : true,
+  &quot;lastname&quot; : &quot;Stark&quot;
+} expected:&lt;{&quot;firstname&quot;:&quot;Darby&quot;,&quot;lastname&quot;:&quot;Stark&quot;,&quot;totalprice&quot;:145,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2023-06-14&quot;,&quot;checkout&quot;:&quot;2023-07-02&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}&gt; but was:&lt;STRICT_ORDER&gt;
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:330)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:66)
+	at com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById(RestfulBookerE2ETests.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1632138940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1632138940'><pre>java.lang.AssertionError: {
+  &quot;firstname&quot; : &quot;Darby&quot;,
+  &quot;additionalneeds&quot; : &quot;Breakfast&quot;,
+  &quot;bookingdates&quot; : {
+    &quot;checkin&quot; : &quot;2023-06-14&quot;,
+    &quot;checkout&quot; : &quot;2023-07-02&quot;
+  },
+  &quot;totalprice&quot; : 145,
+  &quot;depositpaid&quot; : true,
+  &quot;lastname&quot; : &quot;Stark&quot;
+} expected:&lt;{&quot;firstname&quot;:&quot;Darby&quot;,&quot;lastname&quot;:&quot;Stark&quot;,&quot;totalprice&quot;:145,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2023-06-14&quot;,&quot;checkout&quot;:&quot;2023-07-02&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}&gt; but was:&lt;STRICT_ORDER&gt;
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:47)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:330)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:66)
+	at com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById(RestfulBookerE2ETests.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.RestAssured.restfulbooker.RestfulBookerE2ETests@5f282abb</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,30 +175,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.RestAssured.restfulbooker.LambokTest.createBooking()'><b>createBooking</b><br>Test class: com.RestAssured.restfulbooker.LambokTest<br>Test method: To verify create booking API</td>
+<td title='com.RestAssured.restfulbooker.RestfulBookerE2ETests.createNewBooking()'><b>createNewBooking</b><br>Test class: com.RestAssured.restfulbooker.RestfulBookerE2ETests</td>
+<td></td>
+<td>8</td>
+<td>com.RestAssured.restfulbooker.RestfulBookerE2ETests@5f282abb</td></tr>
+<tr>
+<td title='com.RestAssured.restfulbooker.RestfulBookerE2ETests.createToken()'><b>createToken</b><br>Test class: com.RestAssured.restfulbooker.RestfulBookerE2ETests</td>
 <td></td>
 <td>1</td>
-<td>com.RestAssured.restfulbooker.LambokTest@161b062a</td></tr>
+<td>com.RestAssured.restfulbooker.RestfulBookerE2ETests@5f282abb</td></tr>
 <tr>
-<td title='com.RestAssured.restfulbooker.LambokTest.deleteBookingDetails()'><b>deleteBookingDetails</b><br>Test class: com.RestAssured.restfulbooker.LambokTest<br>Test method: To Delete the booking details using DELETE method</td>
-<td></td>
-<td>7</td>
-<td>com.RestAssured.restfulbooker.LambokTest@161b062a</td></tr>
-<tr>
-<td title='com.RestAssured.restfulbooker.LambokTest.getBookingDetailsUsingBookingId()'><b>getBookingDetailsUsingBookingId</b><br>Test class: com.RestAssured.restfulbooker.LambokTest<br>Test method: To get the booking details using bookingId</td>
+<td title='com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingData()'><b>getBookingData</b><br>Test class: com.RestAssured.restfulbooker.RestfulBookerE2ETests</td>
 <td></td>
 <td>2</td>
-<td>com.RestAssured.restfulbooker.LambokTest@161b062a</td></tr>
+<td>com.RestAssured.restfulbooker.RestfulBookerE2ETests@5f282abb</td></tr>
 <tr>
-<td title='com.RestAssured.restfulbooker.LambokTest.partialBookingUpdate()'><b>partialBookingUpdate</b><br>Test class: com.RestAssured.restfulbooker.LambokTest<br>Test method: To partially update the booking details using PATCH method</td>
+<td title='com.RestAssured.restfulbooker.RestfulBookerE2ETests.updateBookingDetails()'><b>updateBookingDetails</b><br>Test class: com.RestAssured.restfulbooker.RestfulBookerE2ETests</td>
 <td></td>
-<td>2</td>
-<td>com.RestAssured.restfulbooker.LambokTest@161b062a</td></tr>
-<tr>
-<td title='com.RestAssured.restfulbooker.LambokTest.updateBookingDetails()'><b>updateBookingDetails</b><br>Test class: com.RestAssured.restfulbooker.LambokTest<br>Test method: To update the booking details using booking Id</td>
-<td></td>
-<td>2</td>
-<td>com.RestAssured.restfulbooker.LambokTest@161b062a</td></tr>
+<td>1</td>
+<td>com.RestAssured.restfulbooker.RestfulBookerE2ETests@5f282abb</td></tr>
 </table><p>
 </body>
 </html>

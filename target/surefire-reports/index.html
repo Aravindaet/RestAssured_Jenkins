@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.RestAssured.restfulbooker.RestfulBookerE2ETests" hash-for-method="getBookingDetailsById">getBookingDetailsById</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -186,36 +172,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.RestAssured.restfulbooker.RestfulBookerE2ETests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getBookingDetailsById">
-                  </a> <!-- getBookingDetailsById -->
-                  <span class="method-name">getBookingDetailsById</span>
-                  <div class="stack-trace">java.lang.AssertionError: {
-  &quot;firstname&quot; : &quot;Katrine&quot;,
-  &quot;additionalneeds&quot; : &quot;Breakfast&quot;,
-  &quot;bookingdates&quot; : {
-    &quot;checkin&quot; : &quot;2023-06-18&quot;,
-    &quot;checkout&quot; : &quot;2023-07-03&quot;
-  },
-  &quot;totalprice&quot; : 133,
-  &quot;depositpaid&quot; : true,
-  &quot;lastname&quot; : &quot;Hand&quot;
-} expected:&lt;{&quot;firstname&quot;:&quot;Katrine&quot;,&quot;lastname&quot;:&quot;Hand&quot;,&quot;totalprice&quot;:133,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2023-06-18&quot;,&quot;checkout&quot;:&quot;2023-07-03&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}&gt; but was:&lt;NON_EXTENSIBLE&gt;
-	at com.RestAssured.restfulbooker.RestfulBookerE2ETests.getBookingDetailsById(RestfulBookerE2ETests.java:89)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -394,64 +350,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createBookingSchemaValidation')
 data.setCell(0, 2, 'com.RestAssured.restfulbooker.JsonSchemaValidationTest')
-data.setCell(0, 3, 9246);
+data.setCell(0, 3, 7465);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getBookingSchemaValidation')
 data.setCell(1, 2, 'com.RestAssured.restfulbooker.JsonSchemaValidationTest')
-data.setCell(1, 3, 3418);
+data.setCell(1, 3, 3152);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'partialBookingUpdate')
 data.setCell(2, 2, 'com.RestAssured.restfulbooker.LambokTest')
-data.setCell(2, 3, 2805);
+data.setCell(2, 3, 2837);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getBookingDetailsUsingBookingId')
+data.setCell(3, 1, 'updateBookingDetails')
 data.setCell(3, 2, 'com.RestAssured.restfulbooker.LambokTest')
-data.setCell(3, 3, 2735);
+data.setCell(3, 3, 2812);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'deleteBookingDetails')
 data.setCell(4, 2, 'com.RestAssured.restfulbooker.LambokTest')
-data.setCell(4, 3, 2734);
+data.setCell(4, 3, 2798);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'updateBookingDetails')
+data.setCell(5, 1, 'getBookingDetailsUsingBookingId')
 data.setCell(5, 2, 'com.RestAssured.restfulbooker.LambokTest')
-data.setCell(5, 3, 2734);
+data.setCell(5, 3, 2676);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getBookingData')
-data.setCell(6, 2, 'com.RestAssured.restfulbooker.RestfulBookerE2ETests')
-data.setCell(6, 3, 1666);
+data.setCell(6, 1, 'createTokenJsonSchemaValidation')
+data.setCell(6, 2, 'com.RestAssured.restfulbooker.JsonSchemaValidationTest')
+data.setCell(6, 3, 1667);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'createTokenJsonSchemaValidation')
-data.setCell(7, 2, 'com.RestAssured.restfulbooker.JsonSchemaValidationTest')
-data.setCell(7, 3, 1567);
+data.setCell(7, 1, 'createNewBooking')
+data.setCell(7, 2, 'com.RestAssured.restfulbooker.RestfulBookerE2ETests')
+data.setCell(7, 3, 1371);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'createBooking')
 data.setCell(8, 2, 'com.RestAssured.restfulbooker.LambokTest')
-data.setCell(8, 3, 1433);
+data.setCell(8, 3, 1348);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'updateBookingDetails')
 data.setCell(9, 2, 'com.RestAssured.restfulbooker.RestfulBookerE2ETests')
-data.setCell(9, 3, 1378);
+data.setCell(9, 3, 1339);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getBookingDetailsById')
+data.setCell(10, 1, 'createToken')
 data.setCell(10, 2, 'com.RestAssured.restfulbooker.RestfulBookerE2ETests')
-data.setCell(10, 3, 1368);
+data.setCell(10, 3, 1321);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'createNewBooking')
+data.setCell(11, 1, 'getBookingData')
 data.setCell(11, 2, 'com.RestAssured.restfulbooker.RestfulBookerE2ETests')
-data.setCell(11, 3, 1356);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'createToken')
-data.setCell(12, 2, 'com.RestAssured.restfulbooker.RestfulBookerE2ETests')
-data.setCell(12, 3, 1331);
+data.setCell(11, 3, 1289);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -466,13 +418,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.RestAssured.restfulbooker.LambokTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">createNewBooking</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.RestAssured.restfulbooker.RestfulBookerE2ETests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getBookingDetailsById</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -491,59 +450,53 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createTokenJsonSchemaValidation</span>
-                <span class="method-start">9258 ms</span>
+                <span class="method-start">7475 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getBookingSchemaValidation</span>
-                <span class="method-start">10826 ms</span>
+                <span class="method-start">9143 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.RestAssured.restfulbooker.RestfulBookerE2ETests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createNewBooking</span>
-                <span class="method-start">14247 ms</span>
+                <span class="method-start">12297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createToken</span>
-                <span class="method-start">15607 ms</span>
+                <span class="method-start">13670 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getBookingData</span>
-                <span class="method-start">16939 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getBookingDetailsById</span>
-                <span class="method-start">18607 ms</span>
+                <span class="method-start">14992 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateBookingDetails</span>
-                <span class="method-start">19986 ms</span>
+                <span class="method-start">16283 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.RestAssured.restfulbooker.LambokTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">deleteBookingDetails</span>
-                <span class="method-start">21366 ms</span>
+                <span class="method-start">17624 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">partialBookingUpdate</span>
-                <span class="method-start">24102 ms</span>
+                <span class="method-start">20424 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createBooking</span>
-                <span class="method-start">26908 ms</span>
+                <span class="method-start">23262 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getBookingDetailsUsingBookingId</span>
-                <span class="method-start">28343 ms</span>
+                <span class="method-start">24612 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateBookingDetails</span>
-                <span class="method-start">31079 ms</span>
+                <span class="method-start">27290 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

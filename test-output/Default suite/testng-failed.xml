@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.RestAssured.restfulbooker.JsonSchemaValidationTest">
+      <class name="com.RestAssured.restfulbooker.RestfulBookerE2ETests">
         <methods>
-          <include name="createBookingSchemaValidation"/>
+          <include name="getBookingDetailsById"/>
         </methods>
-      </class> <!-- com.RestAssured.restfulbooker.JsonSchemaValidationTest -->
+      </class> <!-- com.RestAssured.restfulbooker.RestfulBookerE2ETests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
