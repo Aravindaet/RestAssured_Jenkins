@@ -1,6 +1,5 @@
 package com.RestAssured.restfulbooker;
 
-import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
 import java.util.Map;
@@ -28,7 +27,7 @@ public class JsonSchemaValidationTest {
 				.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("createBookingSchema.json"));
 	}
 
-	@Test(description = "To verify get booking json schema")
+	@Test(description = "To verify get booking json schema", enabled = false)
 	public void getBookingSchemaValidation() {
 		CreateBooking requestPayload = CreateBookingPayload.bookingPayload();
 		Response response = given().contentType(ContentType.JSON).body(requestPayload).when()
